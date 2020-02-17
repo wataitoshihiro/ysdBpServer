@@ -1,0 +1,20 @@
+---
+#memory: 2G
+#instances: 2
+#services:
+#  - service-registry
+applications:
+- name: ysd2
+# https://github:com/making/demo-java11
+#  buildpack: https://github.com/cloudfoundry/java-buildpack.git#v4.16
+  path: build/libs/ysdBpServer-1.1.0-SNAPSHOT.jar
+  memory: 1G
+  instances: 1
+#  routes:
+#  - route: ysd2.dev.cfdev.sh
+  services:
+#  - cupsdb01
+  - db02
+  env:
+    WELCOME_MESSAGE: Hello from the review environment
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'

@@ -1,0 +1,192 @@
+Retrieving logs for app ysd2 in org cfdev-org / space cfdev-space as admin...
+
+   2019-07-04T17:01:51.99+0900 [API/0] OUT Created app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee
+   2019-07-04T17:01:53.97+0900 [API/0] OUT Uploading bits for app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee
+   2019-07-04T17:02:00.19+0900 [API/0] OUT Creating build for app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee
+   2019-07-04T17:02:00.25+0900 [API/0] OUT Updated app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee ({"state"=>"STARTED"})
+   2019-07-04T17:02:00.29+0900 [STG/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 creating container for instance 03601c4d-191e-4f06-8226-f7a6128fa6c5
+   2019-07-04T17:02:00.70+0900 [STG/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 successfully created container for instance 03601c4d-191e-4f06-8226-f7a6128fa6c5
+   2019-07-04T17:02:00.98+0900 [STG/0] OUT Downloading app package...
+   2019-07-04T17:02:01.74+0900 [STG/0] OUT Downloaded app package (20.3M)
+   2019-07-04T17:02:10.74+0900 [STG/0] OUT [1m[31m----->[0m[22m [1m[34mJava Buildpack[0m[22m [34mv4.16[0m | https://github.com/cloudfoundry/java-buildpack.git#3552cb1
+   2019-07-04T17:02:12.27+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mJvmkill Agent[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so [3m[32m(1.2s)[0m[23m
+   2019-07-04T17:02:26.00+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen Jdk JRE[0m[22m [34m11.0.3_07[0m from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/openjdk-jre-11.0.3_07-bionic.tar.gz [3m[32m(13.7s)[0m[23m
+   2019-07-04T17:02:27.35+0900 [STG/0] OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre [3m[32m(1.3s)[0m[23m
+   2019-07-04T17:02:27.35+0900 [STG/0] OUT        JVM DNS caching disabled in lieu of BOSH DNS caching
+   2019-07-04T17:02:28.99+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen JDK Like Memory Calculator[0m[22m [34m3.13.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz [3m[32m(1.6s)[0m[23m
+   2019-07-04T17:02:29.31+0900 [STG/0] OUT        Loaded Classes: 19581, Threads: 250
+   2019-07-04T17:02:29.57+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mClient Certificate Mapper[0m[22m [34m1.8.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.8.0-RELEASE.jar [3m[32m(0.2s)[0m[23m
+   2019-07-04T17:02:29.96+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mContainer Security Provider[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.16.0-RELEASE.jar [3m[32m(0.3s)[0m[23m
+   2019-07-04T17:02:30.94+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mSpring Auto Reconfiguration[0m[22m [34m2.5.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.5.0_RELEASE.jar [3m[32m(0.9s)[0m[23m
+   2019-07-04T17:02:43.99+0900 [STG/0] OUT Exit status 0
+   2019-07-04T17:02:43.99+0900 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-07-04T17:02:43.99+0900 [STG/0] OUT Uploading droplet...
+   2019-07-04T17:02:43.99+0900 [STG/0] OUT Uploading build artifacts cache...
+   2019-07-04T17:02:44.76+0900 [STG/0] OUT Uploaded build artifacts cache (42.5M)
+   2019-07-04T17:02:44.94+0900 [API/0] OUT Creating droplet for app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee
+   2019-07-04T17:02:51.11+0900 [STG/0] OUT Uploaded droplet (63.5M)
+   2019-07-04T17:02:51.13+0900 [STG/0] OUT Uploading complete
+   2019-07-04T17:02:51.42+0900 [STG/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 stopping instance 03601c4d-191e-4f06-8226-f7a6128fa6c5
+   2019-07-04T17:02:51.42+0900 [STG/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 destroying container for instance 03601c4d-191e-4f06-8226-f7a6128fa6c5
+   2019-07-04T17:02:51.61+0900 [CELL/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 creating container for instance 35ae252c-1fd2-4f4a-764e-0327
+   2019-07-04T17:02:52.07+0900 [CELL/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 successfully created container for instance 35ae252c-1fd2-4f4a-764e-0327
+   2019-07-04T17:02:53.76+0900 [STG/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 successfully destroyed container for instance 03601c4d-191e-4f06-8226-f7a6128fa6c5
+   2019-07-04T17:02:54.63+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-07-04T17:02:54.84+0900 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -Xmx406938K -Xss1M -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=129637K
+   2019-07-04T17:02:56.72+0900 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2019-07-04T17:02:56.72+0900 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2019-07-04T17:02:56.72+0900 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2019-07-04T17:02:56.72+0900 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2019-07-04T17:02:56.72+0900 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2019-07-04T17:02:56.72+0900 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2019-07-04T17:02:56.72+0900 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.1.6.RELEASE)
+   2019-07-04T17:02:56.94+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:56.944 [main] INFO   [CloudPropertySourceApplicationContextInitializer.lambda$initialize$1] 'cloud' property source added
+   2019-07-04T17:02:56.95+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:56.949 [main] INFO   [CloudServiceReconfigurationApplicationContextInitializer.lambda$initialize$1] Reconfiguration enabled
+   2019-07-04T17:02:56.96+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:56.960 [main] INFO   [StartupInfoLogger.logStarting] Starting InvoiceRepoApplication on 35ae252c-1fd2-4f4a-764e-0327 with PID 16 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2019-07-04T17:02:56.96+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:56.960 [main] INFO   [SpringApplication.logStartupProfileInfo] The following profiles are active: cloud
+   2019-07-04T17:02:58.05+0900 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+   2019-07-04T17:02:58.06+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:58.066 [main] INFO   [HikariCpPooledDataSourceCreator.create] Found HikariCP on the classpath. Using it for DataSource connection pooling.
+   2019-07-04T17:02:58.09+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:58.092 [main] INFO   [CloudServiceUtils.replaceBeanOfType] 'dataSource' bean of type with 'javax.sql.DataSource' reconfigured with 'db01' bean
+   2019-07-04T17:02:58.96+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:58.960 [main] INFO   [TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+   2019-07-04T17:02:59.01+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:59.010 [main] INFO   [DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+   2019-07-04T17:02:59.04+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:59.040 [main] INFO   [DirectJDKLog.log] Starting service [Tomcat]
+   2019-07-04T17:02:59.04+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:59.041 [main] INFO   [DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.21]
+   2019-07-04T17:02:59.22+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:59.226 [main] INFO   [DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+   2019-07-04T17:02:59.22+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:59.227 [main] INFO   [ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 2222 ms
+   2019-07-04T17:02:59.87+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:02:59.874 [main] INFO   [ExecutorConfigurationSupport.initialize] Initializing ExecutorService 'applicationTaskExecutor'
+   2019-07-04T17:03:00.53+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:03:00.532 [main] INFO   [DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+   2019-07-04T17:03:00.60+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:03:00.608 [main] INFO   [TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+   2019-07-04T17:03:00.74+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:03:00.747 [main] INFO   [StartupInfoLogger.logStarted] Started InvoiceRepoApplication in 4.732 seconds (JVM running for 5.9)
+   2019-07-04T17:03:01.29+0900 [CELL/0] OUT Container became healthy
+   2019-07-04T17:03:10.45+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:03:10.446 [http-nio-8080-exec-3] INFO   [DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+   2019-07-04T17:03:10.45+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:03:10.456 [http-nio-8080-exec-3] INFO   [FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
+   2019-07-04T17:03:10.46+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:03:10.468 [http-nio-8080-exec-3] INFO   [FrameworkServlet.initServletBean] Completed initialization in 11 ms
+   2019-07-04T17:03:10.52+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:03:10.523 [http-nio-8080-exec-3] INFO   [HikariDataSource.getConnection] HikariPool-1 - Starting...
+   2019-07-04T17:03:10.53+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:03:10.533 [http-nio-8080-exec-3] WARN   [DriverDataSource.<init>] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2019-07-04T17:03:10.77+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:03:10.775 [http-nio-8080-exec-3] INFO   [HikariDataSource.getConnection] HikariPool-1 - Start completed.
+   2019-07-04T17:03:10.90+0900 [RTR/0] OUT ysd2.dev.cfdev.sh - [2019-07-04T08:03:10.408+0000] "GET /invoice-repo/1 HTTP/1.1" 200 0 673 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0" "10.144.0.1:40370" "10.144.0.6:61012" x_forwarded_for:"10.144.0.1" x_forwarded_proto:"http" vcap_request_id:"e7317f30-b741-478d-63d9-750e14bc1e7a" response_time:0.500303065 app_id:"8a6b0442-b18d-48f3-a048-eeb40be6a9ee" app_index:"0" x_b3_traceid:"b7ec9e5f88bb3056" x_b3_spanid:"b7ec9e5f88bb3056" x_b3_parentspanid:"-"
+   2019-07-04T17:03:10.90+0900 [RTR/0] OUT 
+   2019-07-04T17:21:33.35+0900 [API/0] OUT Updated app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee ({"buildpack"=>"https://github.com/cloudfoundry/java-buildpack.git#v4.16", "disk_quota"=>1024, "environment_json"=>"[PRIVATE DATA HIDDEN]", "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>1024, "name"=>"ysd2", "space_guid"=>"e123d703-2a4c-4614-b309-c94ef3736929"})
+   2019-07-04T17:21:33.64+0900 [API/0] OUT Uploading bits for app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee
+   2019-07-04T17:21:36.77+0900 [API/0] OUT Updated app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee ({"state"=>"STOPPED"})
+   2019-07-04T17:21:36.94+0900 [API/0] OUT Creating build for app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee
+   2019-07-04T17:21:37.02+0900 [API/0] OUT Updated app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee ({"state"=>"STARTED"})
+   2019-07-04T17:21:37.05+0900 [STG/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 creating container for instance e7d18d70-3586-4750-bbb9-38226e7a6cc4
+   2019-07-04T17:21:37.49+0900 [STG/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 successfully created container for instance e7d18d70-3586-4750-bbb9-38226e7a6cc4
+   2019-07-04T17:21:37.88+0900 [STG/0] OUT Downloading app package...
+   2019-07-04T17:21:37.88+0900 [STG/0] OUT Downloading build artifacts cache...
+   2019-07-04T17:21:38.66+0900 [STG/0] OUT Downloaded app package (20.3M)
+   2019-07-04T17:21:38.82+0900 [STG/0] OUT Downloaded build artifacts cache (42.5M)
+   2019-07-04T17:21:42.06+0900 [CELL/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 stopping instance 35ae252c-1fd2-4f4a-764e-0327
+   2019-07-04T17:21:45.49+0900 [STG/0] OUT [1m[31m----->[0m[22m [1m[34mJava Buildpack[0m[22m [34mv4.16[0m | https://github.com/cloudfoundry/java-buildpack.git#3552cb1
+   2019-07-04T17:21:45.96+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mJvmkill Agent[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so [3m[32m(found in cache)[0m[23m
+   2019-07-04T17:21:46.16+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen Jdk JRE[0m[22m [34m11.0.3_07[0m from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/openjdk-jre-11.0.3_07-bionic.tar.gz [3m[32m(found in cache)[0m[23m
+   2019-07-04T17:21:47.17+0900 [CELL/SSHD/0] OUT Exit status 0
+   2019-07-04T17:21:47.18+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:21:47.184 [Thread-2] INFO   [ExecutorConfigurationSupport.shutdown] Shutting down ExecutorService 'applicationTaskExecutor'
+   2019-07-04T17:21:47.25+0900 [APP/PROC/WEB/0] OUT Exit status 143
+   2019-07-04T17:21:47.38+0900 [CELL/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 destroying container for instance 35ae252c-1fd2-4f4a-764e-0327
+   2019-07-04T17:21:47.56+0900 [STG/0] OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre [3m[32m(1.3s)[0m[23m
+   2019-07-04T17:21:47.56+0900 [STG/0] OUT        JVM DNS caching disabled in lieu of BOSH DNS caching
+   2019-07-04T17:21:47.67+0900 [PROXY/0] OUT Exit status 137
+   2019-07-04T17:21:47.86+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mOpen JDK Like Memory Calculator[0m[22m [34m3.13.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz [3m[32m(found in cache)[0m[23m
+   2019-07-04T17:21:48.18+0900 [STG/0] OUT        Loaded Classes: 19581, Threads: 250
+   2019-07-04T17:21:48.38+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mClient Certificate Mapper[0m[22m [34m1.8.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.8.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-07-04T17:21:48.61+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mContainer Security Provider[0m[22m [34m1.16.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.16.0-RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-07-04T17:21:48.82+0900 [STG/0] OUT [1m[31m----->[0m[22m Downloading [1m[34mSpring Auto Reconfiguration[0m[22m [34m2.5.0_RELEASE[0m from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.5.0_RELEASE.jar [3m[32m(found in cache)[0m[23m
+   2019-07-04T17:21:53.46+0900 [CELL/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 successfully destroyed container for instance 35ae252c-1fd2-4f4a-764e-0327
+   2019-07-04T17:22:01.44+0900 [STG/0] OUT Exit status 0
+   2019-07-04T17:22:01.44+0900 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2019-07-04T17:22:01.44+0900 [STG/0] OUT Uploading droplet...
+   2019-07-04T17:22:01.44+0900 [STG/0] OUT Uploading build artifacts cache...
+   2019-07-04T17:22:02.32+0900 [STG/0] OUT Uploaded build artifacts cache (42.5M)
+   2019-07-04T17:22:02.44+0900 [API/0] OUT Creating droplet for app with guid 8a6b0442-b18d-48f3-a048-eeb40be6a9ee
+   2019-07-04T17:22:08.60+0900 [STG/0] OUT Uploaded droplet (63.5M)
+   2019-07-04T17:22:08.62+0900 [STG/0] OUT Uploading complete
+   2019-07-04T17:22:08.83+0900 [STG/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 stopping instance e7d18d70-3586-4750-bbb9-38226e7a6cc4
+   2019-07-04T17:22:08.83+0900 [STG/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 destroying container for instance e7d18d70-3586-4750-bbb9-38226e7a6cc4
+   2019-07-04T17:22:09.04+0900 [CELL/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 creating container for instance 04dd1e35-2e98-451c-454d-e740
+   2019-07-04T17:22:09.55+0900 [CELL/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 successfully created container for instance 04dd1e35-2e98-451c-454d-e740
+   2019-07-04T17:22:12.16+0900 [CELL/0] OUT Starting health monitoring of container
+   2019-07-04T17:22:12.37+0900 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -Xmx406938K -Xss1M -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=129637K
+   2019-07-04T17:22:13.64+0900 [STG/0] OUT Cell cb549a3c-d5b9-4ccb-a3a6-30049b572e46 successfully destroyed container for instance e7d18d70-3586-4750-bbb9-38226e7a6cc4
+   2019-07-04T17:22:14.35+0900 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2019-07-04T17:22:14.35+0900 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2019-07-04T17:22:14.35+0900 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2019-07-04T17:22:14.35+0900 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2019-07-04T17:22:14.35+0900 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2019-07-04T17:22:14.35+0900 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2019-07-04T17:22:14.35+0900 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.1.6.RELEASE)
+   2019-07-04T17:22:14.66+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:14.657 [main] INFO   [CloudPropertySourceApplicationContextInitializer.lambda$initialize$1] 'cloud' property source added
+   2019-07-04T17:22:14.66+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:14.665 [main] INFO   [CloudServiceReconfigurationApplicationContextInitializer.lambda$initialize$1] Reconfiguration enabled
+   2019-07-04T17:22:14.70+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:14.700 [main] INFO   [StartupInfoLogger.logStarting] Starting InvoiceRepoApplication on 04dd1e35-2e98-451c-454d-e740 with PID 22 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2019-07-04T17:22:14.70+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:14.705 [main] DEBUG  [StartupInfoLogger.logStarting] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+   2019-07-04T17:22:14.70+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:14.706 [main] INFO   [SpringApplication.logStartupProfileInfo] The following profiles are active: cloud
+   2019-07-04T17:22:15.76+0900 [APP/PROC/WEB/0] ERR Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+   2019-07-04T17:22:15.77+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:15.776 [main] INFO   [HikariCpPooledDataSourceCreator.create] Found HikariCP on the classpath. Using it for DataSource connection pooling.
+   2019-07-04T17:22:15.79+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:15.792 [main] DEBUG  [HikariConfig.setDriverClassName] Driver class com.mysql.jdbc.Driver found in Thread context class loader org.springframework.boot.loader.LaunchedURLClassLoader@2c8d66b2
+   2019-07-04T17:22:15.80+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:15.799 [main] INFO   [CloudServiceUtils.replaceBeanOfType] 'dataSource' bean of type with 'javax.sql.DataSource' reconfigured with 'db01' bean
+   2019-07-04T17:22:16.43+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:16.435 [main] INFO   [TomcatWebServer.initialize] Tomcat initialized with port(s): 8080 (http)
+   2019-07-04T17:22:16.45+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:16.456 [main] INFO   [DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-8080"]
+   2019-07-04T17:22:16.47+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:16.478 [main] INFO   [DirectJDKLog.log] Starting service [Tomcat]
+   2019-07-04T17:22:16.47+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:16.478 [main] INFO   [DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.21]
+   2019-07-04T17:22:16.59+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:16.595 [main] INFO   [DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+   2019-07-04T17:22:16.59+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:16.595 [main] INFO   [ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 1801 ms
+   2019-07-04T17:22:16.96+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:16.966 [main] INFO   [ExecutorConfigurationSupport.initialize] Initializing ExecutorService 'applicationTaskExecutor'
+   2019-07-04T17:22:17.36+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:17.366 [main] INFO   [DirectJDKLog.log] Starting ProtocolHandler ["http-nio-8080"]
+   2019-07-04T17:22:17.39+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:17.391 [main] INFO   [TomcatWebServer.start] Tomcat started on port(s): 8080 (http) with context path ''
+   2019-07-04T17:22:17.45+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:17.459 [main] INFO   [StartupInfoLogger.logStarted] Started InvoiceRepoApplication in 3.849 seconds (JVM running for 5.084)
+   2019-07-04T17:22:18.69+0900 [CELL/0] OUT Container became healthy
+   2019-07-04T17:22:39.73+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.734 [http-nio-8080-exec-3] INFO   [DirectJDKLog.log] Initializing Spring DispatcherServlet 'dispatcherServlet'
+   2019-07-04T17:22:39.73+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.737 [http-nio-8080-exec-3] INFO   [FrameworkServlet.initServletBean] Initializing Servlet 'dispatcherServlet'
+   2019-07-04T17:22:39.74+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.749 [http-nio-8080-exec-3] INFO   [FrameworkServlet.initServletBean] Completed initialization in 10 ms
+   2019-07-04T17:22:39.79+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.796 [http-nio-8080-exec-3] DEBUG  [JdbcInvoiceRepository.find] SELECT * FROM invoice WHERE invoiceNumber = [1]
+   2019-07-04T17:22:39.81+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.816 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] HikariPool-1 - configuration:
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.820 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] allowPoolSuspension.............false
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.821 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] autoCommit......................true
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.822 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] catalog.........................none
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.822 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] connectionInitSql...............none
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.822 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] connectionTestQuery............."/* ping */ SELECT 1"
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.823 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] connectionTimeout...............30000
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.823 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] dataSource......................none
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.823 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] dataSourceClassName.............none
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.824 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] dataSourceJNDI..................none
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.825 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] dataSourceProperties............{password=<masked>}
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.826 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] driverClassName................."com.mysql.jdbc.Driver"
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.826 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] healthCheckProperties...........{}
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.826 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] healthCheckRegistry.............none
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.827 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] idleTimeout.....................600000
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.827 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] initializationFailTimeout.......1
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.827 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] isolateInternalQueries..........false
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.828 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] jdbcUrl.........................jdbc:mysql://q-n1s3y1.q-g167.bosh:3306/service_instance_db?user=5176be182af241cb9212d06ebab2fa2d&password=<masked>&useSSL=false
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.828 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] leakDetectionThreshold..........0
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.828 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] maxLifetime.....................1800000
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.829 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] maximumPoolSize.................4
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.829 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] metricRegistry..................none
+   2019-07-04T17:22:39.82+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.829 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] metricsTrackerFactory...........none
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.829 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] minimumIdle.....................0
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.830 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] password........................<masked>
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.830 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] poolName........................"HikariPool-1"
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.830 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] readOnly........................false
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.830 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] registerMbeans..................false
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.831 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] scheduledExecutor...............none
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.831 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] schema..........................none
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.831 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] threadFactory...................internal
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.831 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] transactionIsolation............default
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.831 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] username........................none
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.832 [http-nio-8080-exec-3] DEBUG  [HikariConfig.logConfiguration] validationTimeout...............5000
+   2019-07-04T17:22:39.83+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.832 [http-nio-8080-exec-3] INFO   [HikariDataSource.getConnection] HikariPool-1 - Starting...
+   2019-07-04T17:22:39.84+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.839 [http-nio-8080-exec-3] WARN   [DriverDataSource.<init>] Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+   2019-07-04T17:22:39.84+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:39.840 [http-nio-8080-exec-3] DEBUG  [DriverDataSource.<init>] Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+   2019-07-04T17:22:39.84+0900 [APP/PROC/WEB/0] OUT   context: ROOT
+   2019-07-04T17:22:39.84+0900 [APP/PROC/WEB/0] OUT   delegate: true
+   2019-07-04T17:22:39.84+0900 [APP/PROC/WEB/0] OUT ----------> Parent Classloader:
+   2019-07-04T17:22:39.84+0900 [APP/PROC/WEB/0] OUT org.springframework.boot.loader.LaunchedURLClassLoader@2c8d66b2
+   2019-07-04T17:22:40.05+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:40.055 [http-nio-8080-exec-3] DEBUG  [PoolBase.quietlyCloseConnection] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6ffcb9c9: (initialization check complete and minimumIdle is zero)
+   2019-07-04T17:22:40.06+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:40.061 [http-nio-8080-exec-3] INFO   [HikariDataSource.getConnection] HikariPool-1 - Start completed.
+   2019-07-04T17:22:40.07+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:40.071 [HikariPool-1 connection adder] DEBUG  [HikariPool$PoolEntryCreator.call] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@611d410f
+   2019-07-04T17:22:40.11+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:40.110 [http-nio-8080-exec-3] DEBUG  [JdbcInvoiceRepository.find] Invoice invoiceNumber[1],2018-12-02,贈り物
+   2019-07-04T17:22:40.11+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:40.111 [http-nio-8080-exec-3] DEBUG  [InvoiceController.read] InvoiceNumber[1], HttpStatus[200 OK]
+   2019-07-04T17:22:40.16+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:40.161 [HikariPool-1 housekeeper] DEBUG  [HikariPool.logPoolState] HikariPool-1 - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+   2019-07-04T17:22:40.16+0900 [APP/PROC/WEB/0] OUT 2019/07/04 17:22:40.164 [HikariPool-1 housekeeper] DEBUG  [HikariPool.logPoolState] HikariPool-1 - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+   2019-07-04T17:22:40.17+0900 [RTR/0] OUT ysd2.dev.cfdev.sh - [2019-07-04T08:22:39.703+0000] "GET /invoice-repo/1 HTTP/1.1" 200 0 673 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0" "10.144.0.1:52816" "10.144.0.6:61012" x_forwarded_for:"10.144.0.1" x_forwarded_proto:"http" vcap_request_id:"f08f9c54-2ff1-43e8-4d44-adada20d3f4f" response_time:0.467843805 app_id:"8a6b0442-b18d-48f3-a048-eeb40be6a9ee" app_index:"0" x_b3_traceid:"fad6c86ed83e50ee" x_b3_spanid:"fad6c86ed83e50ee" x_b3_parentspanid:"-"
+   2019-07-04T17:22:40.17+0900 [RTR/0] OUT 

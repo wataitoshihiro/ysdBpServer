@@ -1,0 +1,53 @@
+2019/07/10 22:46:55.074 [main] INFO   [StartupInfoLogger.logStarting] Starting InvoiceRepoApplication on LAPTOP-I2EIFFC8 with PID 1364 (C:\Intellij201912Ws\ws01\ysdBpServer\build\classes\java\main started by watai in C:\Intellij201912Ws\ws01\ysdBpServer)
+2019/07/10 22:46:55.079 [main] DEBUG  [StartupInfoLogger.logStarting] Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2019/07/10 22:46:55.080 [main] INFO   [SpringApplication.logStartupProfileInfo] No active profile set, falling back to default profiles: default
+2019/07/10 22:46:56.378 [main] INFO   [RepositoryConfigurationDelegate.multipleStoresDetected] Multiple Spring Data modules found, entering strict repository configuration mode!
+2019/07/10 22:46:56.384 [main] INFO   [RepositoryConfigurationDelegate.registerRepositoriesIn] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019/07/10 22:46:56.452 [main] INFO   [RepositoryConfigurationDelegate.registerRepositoriesIn] Finished Spring Data repository scanning in 43ms. Found 0 repository interfaces.
+2019/07/10 22:46:57.245 [main] INFO   [PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$88102825] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019/07/10 22:46:58.496 [main] INFO   [TomcatWebServer.initialize] Tomcat initialized with port(s): 3333 (http)
+2019/07/10 22:46:58.519 [main] INFO   [DirectJDKLog.log] Initializing ProtocolHandler ["http-nio-3333"]
+2019/07/10 22:46:58.536 [main] INFO   [DirectJDKLog.log] Starting service [Tomcat]
+2019/07/10 22:46:58.537 [main] INFO   [DirectJDKLog.log] Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019/07/10 22:46:58.749 [main] INFO   [DirectJDKLog.log] Initializing Spring embedded WebApplicationContext
+2019/07/10 22:46:58.750 [main] INFO   [ServletWebServerApplicationContext.prepareWebApplicationContext] Root WebApplicationContext: initialization completed in 3598 ms
+2019/07/10 22:46:58.900 [main] DEBUG  [HikariConfig.setDriverClassName] Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@28c97a5
+2019/07/10 22:46:58.970 [main] WARN   [AbstractApplicationContext.refresh] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'welcomeController' defined in file [C:\Intellij201912Ws\ws01\ysdBpServer\build\classes\java\main\io\pivotal\pal\tracker\WelcomeController.class]: Unexpected exception during bean creation; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'welcome_message' in value "${welcome_message}"
+2019/07/10 22:46:58.975 [main] INFO   [DirectJDKLog.log] Stopping service [Tomcat]
+2019/07/10 22:46:58.998 [main] INFO   [ConditionEvaluationReportLoggingListener.logMessage] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019/07/10 22:46:59.004 [main] ERROR  [SpringApplication.reportFailure] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'welcomeController' defined in file [C:\Intellij201912Ws\ws01\ysdBpServer\build\classes\java\main\io\pivotal\pal\tracker\WelcomeController.class]: Unexpected exception during bean creation; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'welcome_message' in value "${welcome_message}"
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:528)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at io.pivotal.pal.tracker.InvoiceRepoApplication.main(InvoiceRepoApplication.java:25)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'welcome_message' in value "${welcome_message}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	... 14 common frames omitted
