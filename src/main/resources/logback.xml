@@ -39,7 +39,7 @@
   <logger name="util.RuleLogger" level="info" />
   <logger name="common.util" level="info" />
   <logger name="util.brms.ControlFactForSdkMasterWork" level="info" />
-  <!--<logger name="io.pivotal.pal.tracker" level="debug" />-->
+  <logger name="io.pivotal.pal.tracker" level="debug" />
 
 <!-- trace, debug, info, warn, error -->
   <root level="debug">
