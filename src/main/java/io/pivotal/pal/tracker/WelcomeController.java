@@ -12,18 +12,21 @@ import tx.util.StopWatch;
 public class WelcomeController {
     private static Logger logger = LoggerFactory.getLogger(WelcomeController.class);
 
-    private String welcomeMessage;
+//    private String welcomeMessage;
 //    private String welcomeMessage="hello !!!";
 
     public WelcomeController(
-        @Value("${welcome_message}") String welcomeMessage
+//        @Value("${welcome_message}") String welcomeMessage
     ) {
-        this.welcomeMessage = welcomeMessage;
+//        this.welcomeMessage = welcomeMessage;
     }
 
     @GetMapping("/")
+//    public String sayHello() {
+//        return welcomeMessage;
+//    }
     public String sayHello() {
-        return welcomeMessage;
+        return "-> hello !!!";
     }
-    
+
 }
